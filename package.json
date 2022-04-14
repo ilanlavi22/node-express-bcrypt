@@ -1,0 +1,27 @@
+{
+  "name": "express-bcrypt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "app.js",
+    "dev": "nodemon ./server -e js,json,ejs,scss,css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilanlavi22/node-express-bcrypt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilanlavi22/node-express-bcrypt/issues"
+  },
+  "homepage": "https://github.com/ilanlavi22/node-express-bcrypt#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.0"
+  }
+}
