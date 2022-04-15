@@ -17,8 +17,13 @@ app.use(
 
 // middleware & view engine
 app.use(express.static('public'))
+//app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 app.set('view engine', 'ejs')
 app.use(favicon(path.join(__dirname, 'public/images/favicon.ico')));
+
+
 
 // default value for title local
 app.locals.title = 'NE-AUTH';
