@@ -1,10 +1,32 @@
-# About The Project
+# About The Application
 
-This is a project description text
+Node Express jwt Authentication
 
-## Pages
+## Dependencies
 
-Listing features
+- Node, Express
+- bcryptjs (jwt auth)
+- dotenv
+- ejs view engine
+- node-sass-middleware
+- serve-favicon
 
-- feature A
-- feature B
+## Setting Files
+
+- server.js
+- nodemon.json
+- .env
+- .gitignore
+- app.js
+
+## Public
+
+- images
+- styles (scss)
+
+## Application Structure
+
+- views / partials (ejs)
+- routes
+- models
+- controllers (MVC structure)
