@@ -45,8 +45,21 @@ module.exports.signup_post = async (req, res) => {
   }
 }
 
-module.exports.login_post = async (req, res) => {
-  const { name, email, password } = req.body;
-  res.send('user login')
+module.exports.login_post = async (req, res, next) => {
+  const { email, password } = req.body;
+  res.send('user login');
+  // User.findOne({ email })
+  //   .then((user) => {
+  //     if (user === null) {
+  //       console.log('null')
+  //       throw new Error('There is no user with that email.')
+  //     } else {
+  //       console.log(bcryptjs.compare(password, user.password));
+  //       return bcryptjs.compare(password, user.password);
+  //     }
+  //   })
+  //   .catch((error) => {
+  //     next()
+  //   })
 }
 
