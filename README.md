@@ -1,6 +1,7 @@
 # About The Application
 
-Node Express jwt Authentication
+- Node Express jwt Authentication
+- Mongoose Validation
 
 ## Dependencies
 
