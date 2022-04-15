@@ -5,7 +5,7 @@
 
 ## Dependencies
 
-- Node, Express
+- express
 - bcryptjs (jwt auth)
 - dotenv
 - ejs view engine
