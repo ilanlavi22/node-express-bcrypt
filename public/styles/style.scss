@@ -44,13 +44,24 @@ nav {
   justify-content: space-between;
   align-items: flex-end;
   margin-block: 2rem 4rem;
+  margin-inline: 1rem;
 
   ul {
     display: flex;
+    flex: 1;
     align-items: center;
+
+    .nav-divider {
+      display: flex;
+      margin-left: auto;
+    }
 
     li {
       margin-left: 20px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
 
       a {
         text-transform: uppercase;
