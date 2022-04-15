@@ -25,8 +25,12 @@ app.locals.title = 'NE-AUTH';
 
 // routes
 
-app.get('/', (req, res, next) => res.render('home'))
-app.get('/smoothies', (req, res, next) => res.render('smoothies'))
+app.get('/', (req, res) => res.render('home'))
+app.get('/smoothies', (req, res) => res.render('smoothies'))
+
+const authRoutes = require('./routes/authRoutes')
+app.use(authRoutes)
+
 
 app.get('*', (req, res, next) => {
   next(new Error('NOT_FOUND'));
