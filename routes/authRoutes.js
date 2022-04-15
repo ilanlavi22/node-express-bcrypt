@@ -1,8 +1,7 @@
 const { Router } = require('express')
-const authRouter = Router()
 const authController = require('../controllers/authController')
-const User = require('../models/user')
-const bcryptjs = require('bcryptjs')
+
+const authRouter = Router()
 
 authRouter.get('/signup', authController.signup_get)
 authRouter.post('/signup', authController.signup_post)

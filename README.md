@@ -11,6 +11,7 @@
 - ejs view engine
 - node-sass-middleware
 - serve-favicon
+- validator (used in model-schema field validation)
 
 ## Setting Files
 

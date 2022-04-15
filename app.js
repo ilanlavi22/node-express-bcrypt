@@ -23,14 +23,12 @@ app.use(express.json());
 app.set('view engine', 'ejs')
 app.use(favicon(path.join(__dirname, 'public/images/favicon.ico')));
 
-
-
 // default value for title local
 app.locals.title = 'NE-AUTH';
 
 // routes
-
 app.get('/', (req, res) => res.render('home'))
+
 app.get('/smoothies', (req, res) => res.render('smoothies'))
 
 const authRoutes = require('./routes/authRoutes')
